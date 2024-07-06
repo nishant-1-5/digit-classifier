@@ -5,6 +5,7 @@ This project involves building a digit classification model using a neural netwo
 <ul><li>Matplotlib</li>
 <li>Numpy</li>
 <li>Tensorflow</li>
+<li>Sk-Learn</li>
 </ul>
 You can install these packages via pip.
 
