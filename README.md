@@ -22,6 +22,6 @@ This project uses a neural network to classify input digits between 0 and 9, It 
 4. **Hidden Layer 3**: The third hidden layer has 15 neurons and uses the ReLU activation function.
 5. **Output Layer**: The output layer has 10 neurons (one for each digit class) and uses a linear activation function. 
 
-#Result:
+# Result:
 
 <img src="/img/Predictions.png" />
