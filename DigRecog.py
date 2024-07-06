@@ -44,11 +44,12 @@ print(model.summary())
 
 model.compile(
     loss=SparseCategoricalCrossentropy(from_logits=True),
-    optimizer=tf.keras.optimizers.Adam(0.01)
+    optimizer=tf.keras.optimizers.Adam(0.01),
+    metrics=['accuracy']
 )
 
 model.fit(X_train, y_train, epochs=80, validation_data=(X_cv, y_cv))
-test_acc = model.evaluate(X_test, y_test)
+test_loss, test_acc = model.evaluate(X_test, y_test)
 print(f"Test accuracy: {test_acc}")
 
 logits = model.predict(X_test)
